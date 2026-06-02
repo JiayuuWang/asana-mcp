@@ -3,9 +3,11 @@ name = "dedalus-labs-asana-mcp"
 version = "0.1.0"
 description = "Type 4 OAuth MCP server for Asana API"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
-    "dedalus-mcp>=0.1.0",
+    "dedalus-mcp>=0.7.0",
+    "dedalus-labs>=0.2.0",
+    "python-dotenv>=1.0.0",
     "httpx>=0.25.0",
 ]
 
