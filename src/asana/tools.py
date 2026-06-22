@@ -18,7 +18,7 @@ async def _req(
 ) -> Result:
     ctx = get_context()
     resp = await ctx.dispatch(
-        "JiayuWang-asana-mcp",
+        "asana",
         HttpRequest(method=method, path=path, body=body, params=params),
     )
     if resp.success:
