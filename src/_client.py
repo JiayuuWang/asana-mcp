@@ -110,7 +110,7 @@ async def main() -> int:
     from dedalus_labs import AsyncDedalus, DedalusRunner
     from dedalus_mcp.auth import SecretValues
 
-    creds = [SecretValues(_rebind(asana, MCP_SERVER_SLUG), token=ASANA_ACCESS_TOKEN)]
+    creds = [SecretValues(asana, token=ASANA_ACCESS_TOKEN)]
 
     client = AsyncDedalus(
         api_key=DEDALUS_API_KEY,
